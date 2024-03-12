@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border p-0 m-0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .contact-us-bg {
+    background-image: url("./img/hero-bg.jpg");
+  }
+
+  .why-bg {
+    background-image: url("./img/us-bg.jpg");
+  }
+
+  .health {
+    background-image: url("./img/healthy-bg.jpg");
+  }
+
+  .trainer {
+    background-image: url("./img/trainer-bg.jpg");
+  }
+
+  nav:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  nav:nth-child(2) {
+    display: block;
+  }
+
+  nav:first-child {
+    display: none;
+  }
+
+  .mobile-nav ul {
+    flex-direction: column;
+    animation-duration: 1s;
+    animation-name: navdrop;
+  }
+
+  .mobile-nav ul li {
+    padding: 2% 0;
+  }
+
+  .fitness {
+    font-size: 26px;
+  }
+
+  .training {
+    font-size: 30px;
+  }
+
+  .neogym {
+    font-size: 38px;
+  }
+
+  .why-choose-us {
+    font-size: 34px;
+  }
+
+ .title{
+    font-size: 12px;
+  }
+
+
+  
+  .health-text{
+    
+    font-size: 28px;
+  }
+  .our-gym-trainer{
+    
+    font-size: 26px;
+  }
+
+  .message-con p{
+    
+    font-size: 24px;
+  }
+
+
+  .item-con {
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  .item-con .item {
+    flex-basis: 40%;
+    margin: 2% 0;
+  }
+
+  .our-gym .social-media {
+    display: block;
+  }
+
+  .t-image {
+    width: 45vw;
+  }
+
+  .image-contact {
+    display: block;
+  }
+
+  .message-con .img-con {
+    width: 100%;
+  }
+
+  .message-con p {
+    text-align: center;
+  }
+
+  .form-con {
+    padding: 0 2%;
+  }
+
+  .message-con input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .message-con button {
+    margin-left: 2%;
+  }
+
+  footer .w-\[50\%\] {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .footer{
+    flex-direction: column;
+  }
+  
+  .footer div{
+    margin: 1% 0;
+  }
+
+  .footer p{
+    font-size: 12px;
+  }
+
+  @keyframes navdrop {
+    0%{
+      transform: translateY(-100%);
+    }
+    100%{
+      transform: translateY(0);
+    }
+
+  }
+}
